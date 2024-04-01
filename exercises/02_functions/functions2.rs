@@ -9,8 +9,9 @@ fn main() {
     call_me(3);
 }
 
-fn call_me(num:) {
-    for i in 0..num {
+fn call_me(num:i32) {
+    // iterate in reverse
+    for i in (0..num).rev() {
         println!("Ring! Call number {}", i + 1);
     }
 }
